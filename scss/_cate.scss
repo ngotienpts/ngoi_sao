@@ -6,8 +6,8 @@
 
         &.active {
             .pagination-link {
-                color: #a61b28;
-                border-bottom: 1px solid #a61b28;
+                color: #fff;
+                background-color: #544abc;
             }
         }
     }
@@ -18,67 +18,96 @@
         justify-content: center;
         width: 36px;
         height: 36px;
-
+        background-color: #f7f7f7;
+        border-radius: 4px;
         &:hover {
-            color: #a61b28;
+            background-color: #f2f2f2;
         }
 
         img {
-            height: 20px;
+            height: 12px;
             width: auto;
         }
     }
 }
 
-.breadcrumb {
+.breadcrumb-primary {
     &-container {
-        margin-bottom: 2px;
+        margin-bottom: 10px;
         display: flex;
-        flex-wrap: nowrap;
-        overflow: auto;
-        white-space: nowrap;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #e7e7e7;
     }
 
     &-item {
-        color: #333;
-
-        .breadcrumb-link {
-            margin-right: 12px;
-            font-weight: 300;
+        &.active {
+            .breadcrumb-primary-link {
+                border-color: #544abc;
+            }
         }
+        
+    }
 
+    &-link {
+        border-bottom: 4px solid transparent;
+    }
+}
+.breadcrumb-secondary {
+    &-left {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: auto;
+    }
+    &-item {
         &:first-child {
-            .breadcrumb-link {
+            .breadcrumb-secondary-link {
                 margin-left: -10px;
-                margin-right: 8px;
+                margin-right: 5px;
             }
         }
 
         &:last-child {
-            color: #5f3b23;
-
-            .breadcrumb-link::before {
-                content: none;
+            .breadcrumb-secondary-link {
+                margin-right: 0;
+                &::before {
+                    content: none;
+                }
             }
         }
     }
-
     &-link {
+        color: #888;
+        font-weight: bold;
+        text-transform: uppercase;
         position: relative;
         display: inline-block;
-        padding: 15px 10px 10px;
+        padding: 4px 10px 0 10px;
 
         &::before {
-            content: "|";
+            content: "/";
             position: absolute;
             right: -5px;
-            color: #a8a8a8;
+            color: #A8A8A8;
         }
     }
 }
-
 .ads-right {
     img {
         width: 100%;
+    }
+}
+.see-more {
+    &__btn {
+        padding: 8px 24px;
+        background-color: #544abc;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 14px;
+
+        &:hover {
+            color: #fff;
+            background-color: #4a42a3;
+        }
     }
 }

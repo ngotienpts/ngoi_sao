@@ -27,5 +27,33 @@
     }
 }
 
+
+.footer-menu {
+    border-bottom: 2px solid #544abc;
+    &__item {
+        border-right: 1px solid #ededed;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__link {
+        color: #808080;
+
+    }
+}
+.footer-text {
+    p + p {
+        margin-top: 5px;
+    }
+}
+
 .footer-primary {
+    &__top {
+        .logo {
+            img {
+                height: 48px;
+                width: auto;
+            }
+        }
+    }
 }

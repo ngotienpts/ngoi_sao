@@ -134,6 +134,50 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+     // khởi tạo slider với 2.5 item
+    function initSliderHalfPastTwoItems() {
+        const halfPastTwoSlides = document.querySelectorAll(".js__halfPastTwoSlidesContainer");
+        if (halfPastTwoSlides) {
+            halfPastTwoSlides.forEach((item) => {
+                var slider = item.querySelector(".js__halfPastTwoSlide");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                var pagi = item.querySelector(".swiper-pagination");
+                new Swiper(slider, {
+                    slidesPerView: 1.4,
+                    spaceBetween: 12,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    pagination: {
+                        el: pagi || null,
+                        clickable: true,
+                    },
+                    // autoplay: {
+                    //     delay: 3000,
+                    //     disableOnInteraction: false,
+                    // },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2.4,
+                            spaceBetween: 15,
+                        },
+                        1024: {
+                            slidesPerView: 2.4,
+                            spaceBetween: 20,
+                        },
+                        1200: {
+                            slidesPerView: 2.4,
+                            spaceBetween: 20,
+                        },
+                    },
+                });
+            });
+        }
+    }
+
     // khởi tạo slider với 3 item
     function initSliderThreeItems() {
         const threeSlides = document.querySelectorAll(".js__threeSlidesContainer");
@@ -509,6 +553,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initStickyContent();
         // slide
         initSliderOneItems();
+        initSliderHalfPastTwoItems();
         initSliderThreeItems();
         initSliderFourItems();
         initSliderFiveItems();

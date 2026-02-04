@@ -272,6 +272,27 @@
             width: 12px;
         }
     }
+    .footer-primary {
+        background-color: #222222;
+
+        .mb_section {
+            color: #b7b5b5;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: solid 1px #383838;
+            padding-bottom: 15px;
+
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+        .mb_section_head {
+            color: #4a3996 !important;
+            font-weight: 700;
+            padding: 15px 0;
+        }
+    }
 }
 
 // max width 767px
@@ -334,9 +355,8 @@
     }
 
     // --------------------------------------------------------------------cate
-    .breadcrumb-container {
-        padding-top: 0;
-        padding-bottom: 0;
+    .breadcrumb-primary {
+        
     }
 
     // --------------------------------------------------------------------detail
