@@ -160,6 +160,11 @@
     }
 }
 
+.js__video169 iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
 .heading-primary {
     &__icon {
         width: 20px;
@@ -337,6 +342,13 @@
 .box-sixteen {
 }
 
+.box-seventeen {
+
+}
+.box-eighteen {
+
+}
+
 .box-right-one {
     border: 1px solid #cecece;
 
@@ -372,11 +384,9 @@
     }
 }
 
+
 .section-quaternary {
-    iframe {
-        width: 100%;
-        max-width: 100%;
-    }
+    
     &__right {
         .article-smalls {
             max-height: 400px;
