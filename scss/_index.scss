@@ -316,6 +316,10 @@
 }
 
 .box-seven {
+    h2,p,h3,h4,h5,h6 {
+        font-size: unset !important;
+        margin-bottom: unset !important;
+    }
 }
 
 .box-eight {

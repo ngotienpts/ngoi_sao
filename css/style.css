@@ -2666,6 +2666,11 @@ p + p {
   overflow: auto;
 }
 
+.box-seven h2, .box-seven p, .box-seven h3, .box-seven h4, .box-seven h5, .box-seven h6 {
+  font-size: unset !important;
+  margin-bottom: unset !important;
+}
+
 .box-twelve .articles {
   max-height: 400px;
   overflow: auto;
